@@ -1,0 +1,21 @@
+{
+  "name": "high-street-gym-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "frontend": "npm run dev -w frontend",
+    "backend": "npm run start -w backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "backend": "^1.0.0",
+    "frontend": "^0.0.0"
+  }
+}

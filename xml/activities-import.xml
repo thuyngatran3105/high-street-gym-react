@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activities-upload [
+    <!ELEMENT activities-upload (activities)>
+    <!ATTLIST activities-upload operation (insert) "insert">
+    <!ELEMENT activities (activity+)>
+    <!ELEMENT activity (id?, name, description, duration)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT duration (#PCDATA)>
+]>
+<activities-upload operation="insert">
+    <activities>
+        <activity>
+            <name>Meditation</name>
+            <description>Our Meditation classes at High Street Gym offer a tranquil environment 
+            where participants can focus on mindfulness, relaxation, and inner peace. Led by experienced 
+            instructors, these sessions guide you through various meditation techniques designed to 
+            reduce stress, improve mental clarity, and promote overall well-being. Whether you are new 
+            to meditation or an experienced practitioner, our classes provide a welcoming space to 
+            rejuvenate your mind and spirit.</description>
+            <duration>30 minutes</duration>
+        </activity>
+        <activity>
+            <name>Tai Chi</name>
+            <description>Our Tai Chi classes offer a low-impact workout that promotes relaxation, balance, and 
+            overall well-being. This ancient Chinese practice involves slow, flowing movements and deep breathing, 
+            making it an excellent choice for reducing stress and improving mental clarity. Suitable for all fitness levels, 
+            Tai Chi provides a holistic approach to health and wellness.</description>
+            <duration>1 hour</duration>
+        </activity>
+        <activity>
+            <name>Breathwork</name>
+            <description>Breathwork at High Street Gym is designed to help participants harness the power of controlled 
+            breathing to reduce stress, increase energy, and enhance mental focus. These sessions are led by expert 
+            instructors who guide you through various breathing techniques, making it a perfect complement to your fitness routine.</description>
+            <duration>30 minutes</duration>
+        </activity>
+    </activities>
+</activities-upload>
