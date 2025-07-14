@@ -5,9 +5,6 @@ import * as Users from "../models/users.js";
 
 //GET /api/blogs
 export async function getAllBlogs(req, res) {
-  //Authenticate the user using auth key
-  const auth_key = req.get("X-AUTH-KEY");
-  const currentUser = await Users.getByAuthKey(auth_key);
   Blogs.getAll()
     .then((blogs) => {
       res.status(200).json({
